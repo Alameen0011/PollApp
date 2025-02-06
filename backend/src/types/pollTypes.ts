@@ -5,4 +5,5 @@ export interface IPoll extends Document {
   question: string; // the question asked in the poll
   options: string[]; // an array of options for the poll
   votes: number[]; // an array of count of votes corresponding to each option
+  votedUsers: string[];// to prevent multiple voting of users
 }

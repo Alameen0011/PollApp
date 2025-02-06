@@ -1,5 +1,5 @@
 import express from "express";
-import { createPoll, getPolls, vote } from "../controllers/pollController";
+import { createPoll, getPolls, vote, } from "../controllers/pollController";
 
 
 
@@ -7,8 +7,8 @@ const router = express.Router();
 
 
 router.get('/',getPolls);
-// router.post('/',createPoll)
-// router.post('/vote',vote)
+router.post('/',createPoll)
+router.post('/vote',vote)
 
 
 

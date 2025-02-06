@@ -6,7 +6,8 @@ import { IPoll } from "../types/pollTypes";
 const pollSchema = new mongoose.Schema <IPoll>({
     question: { type: String, required: true},
     options: { type: [String], required: true},
-    votes: {type: [Number], required: true}
+    votes: {type: [Number], required: true},
+    votedUsers: {type:[String],default: []}
 },{timestamps: true})
 
 
