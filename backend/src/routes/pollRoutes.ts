@@ -1,12 +1,14 @@
-import { Router } from "express";
-import { createPoll, getPolls } from "../controllers/pollController";
+import express from "express";
+import { createPoll, getPolls, vote } from "../controllers/pollController";
 
 
-const router = Router();
+
+const router = express.Router();    
 
 
 router.get('/',getPolls);
-router.post('/',createPoll)
+// router.post('/',createPoll)
+// router.post('/vote',vote)
 
 
 
